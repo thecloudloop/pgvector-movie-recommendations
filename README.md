@@ -14,10 +14,10 @@ We'll illustrate this functionality through a practical use case: crafting perso
 
 To successfully complete this solution walkthrough, ensure that your workstation has the following software installed:
 
-```
-	1. Docker ([Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/) and [Linux](https://docs.docker.com/desktop/install/linux-install/))
-	2. Git ([Mac](https://git-scm.com/download/mac), [Windows](https://git-scm.com/download/win) and [Linux](https://git-scm.com/download/linux))
-```
+
+ 1. Docker ([Mac](https://docs.docker.com/desktop/install/mac-install/), [Windows](https://docs.docker.com/desktop/install/windows-install/) and [Linux](https://docs.docker.com/desktop/install/linux-install/))
+ 2. Git ([Mac](https://git-scm.com/download/mac), [Windows](https://git-scm.com/download/win) and [Linux](https://git-scm.com/download/linux))
+
 
 ## Solution
 
