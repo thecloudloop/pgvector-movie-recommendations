@@ -1,0 +1,47 @@
+version: '3.3'
+
+services:
+
+  postgres:
+    image: postgres-pgvector:latest
+    build:
+     context: ./src/db
+     args:
+      - POSTGRESQL_VERSION=15
+      - PGVECTOR_VERSION=v0.5.0
+    ports:
+     - 5433:5433
+    volumes:
+      - postgres_data1:/pgdata
+      - ./src/db/pg-init.sql:/docker-entrypoint-initdb.d/create_tables.sql
+    environment:
+     - POSTGRES_USER=postgres
+     - POSTGRES_PASSWORD=postgres
+     - POSTGRES_DB=moviesdb
+     - PGDATA=/pgdata
+     - PGPORT=5433
+     - PGVECTOR_VERSION=v0.5.0
+     - POSTGRESQL_VERSION=15
+
+  app:
+    image: streamlit-app:latest
+    build:
+     context: ./src/app
+    links:
+     - postgres
+    depends_on:
+     - postgres
+    ports:
+     - 8501:8501
+    environment:
+     - DBHOST=postgres
+     - DBPORT=5433
+     - DBUSER=postgres
+     - DBPASSWORD=postgres
+     - DBNAME=moviesdb
+     - STREAMLIT_THEME_BASE=dark
+     
+volumes:
+  postgres_data1:
+    driver: local
+
