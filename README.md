@@ -8,7 +8,7 @@ We'll illustrate this functionality through a practical use case: crafting perso
 
 ## Architecture
 
-![Architecture](src/static/images/architecture.png)
+![Architecture](src/static/images/architecture1.png)
 
 ## Prerequisites
 
