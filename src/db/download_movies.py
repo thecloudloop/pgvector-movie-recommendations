@@ -6,13 +6,15 @@ url = "https://api.themoviedb.org/3/discover/movie?include_adult=false&language=
 kwurl = "https://api.themoviedb.org/3/movie/{}/keywords"
 videourl = "https://api.themoviedb.org/3/movie/{}/videos?language=en-US"
 crediturl = "https://api.themoviedb.org/3/movie/{}/credits?language=en-US"
+reviewurl = "https://api.themoviedb.org/3/movie/{}/reviews?language=en-US&page={}"
+posterurl = "https://api.themoviedb.org/3/movie/{}?language=en-US"
 
 total_pages=500
 page = 1
 
 headers = {
     "accept": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzOTMwN2I2ZjBmN2JmNmNiNzRlMzNiNjQ0YWZiMjY1NSIsInN1YiI6IjY1MDI3NmI0NmEyMjI3MDBhYmE5NzYwYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.D20xmqrADx67d7tzKhUkfI4QIC8YTB13EdWfr3rBKko"
+    "Authorization": "Bearer <Token>"
 }
 
 s = requests.Session()
