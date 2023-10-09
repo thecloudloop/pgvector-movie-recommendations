@@ -15,7 +15,7 @@ posterurl = "https://api.themoviedb.org/3/movie/{}?language=en-US"
 
 headers = {
     "accept": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzOTMwN2I2ZjBmN2JmNmNiNzRlMzNiNjQ0YWZiMjY1NSIsInN1YiI6IjY1MDI3NmI0NmEyMjI3MDBhYmE5NzYwYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.D20xmqrADx67d7tzKhUkfI4QIC8YTB13EdWfr3rBKko"
+    "Authorization": "Bearer <Token>"
 }
 
 s = requests.Session()
